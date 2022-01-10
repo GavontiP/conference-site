@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- Name: G'Avonti Patton
+     Assignment: CS336 Assignment #4
+     Created: 8/21/2021
+     Description: The registration page for my personal website.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Gavonti Paton" name="author"/>
+    <meta content="The Template page for my personal website." name="description"/>
+    <meta content="personal,registration" name="keywords"/>
+    <meta content="noindex" name="robots"/>
+    <title>Registration</title>
+</head>
+<body>
+<header>
+
+
+</header>
+<main>
+    <form
+            method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>Title:</p>
+            <label>
+                <select name="Title">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+            <p>First name:
+                <input id="fname" maxlength="30" name="first name" pattern="[a-zA-Z]+"
+                       placeholder="John"
+                       title="First Name should only contain letters"
+                       type="text"/>
+            </p>
+            <p>id number:
+                <input id="idnum" maxlength="30" name="id number" pattern="[0-9]{6}"
+                       placeholder="123456"
+                       title="6 digit conference id number."
+                       type="text"/>
+            <p>Last name:
+                <input maxlength="30" name="Last Name" pattern="[a-zA-Z]+"
+                       placeholder="Smith"
+                       title="Last Name should only contain letters"
+                       type="text"/>
+            </p>
+            <p>Address line 1:
+                <input maxlength="30" name="Address line 1" pattern="[a-zA-Z0-9\ \#]+"
+                       placeholder="1752 zephyr st"
+                       title="Only characters including
+                    spaces and numbers (no
+                    symbols other than #)"
+                       type="text"/>
+            </p>
+            <p>Address line 2:
+                <label>
+                    Address line 2:
+                    <input maxlength="30" name="Address line 2" placeholder="1752 zephyr st"
+                           size="15"
+                           type="text">
+                </label>
+            </p>
+            <p>City:
+                <input maxlength="30" name="City" pattern="[a-zA-Z]+"
+                       placeholder="Denver"
+                       size="15"
+                       title="City should only contain letters"
+                       type="text"/>
+            </p>
+            <p>What state do you live in?</p>
+            <label>
+                <select>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </label>
+            <p>Zip Code
+                <input maxlength="30" name="Last Name" pattern="[0-9]{5}"
+                       placeholder="80124"
+                       required="required"
+                       size="15" title="Numbers only. This will
+                be a five character field,
+                    not a 5+4 zip code"
+                       type="text">
+            </p>
+            <p>Telephone
+                <label>
+                    Telephone
+                    <input name="telephone" pattern="[0-9]{10}"
+                           placeholder="7205655675"
+                           required="required"
+                           type="tel">
+                </label>
+            </p>
+            <label>
+                Email Address
+                <input maxlength="30" name="email"
+                       placeholder="hinow@gmail.com" required="required"
+                       type="email">
+            </label>
+        </fieldset>
+        <fieldset id="Workshop">
+            <legend>Workshop Information</legend>
+            <p>Session 1 Workshop:
+                <br/>
+                <input id="A" name="session1" type="radio"/>
+                <label for="A"> A-Build your team.</label>
+                <input id="B" name="session1" type="radio"/>
+                <label for="B"> B-Managing a budget.</label>
+                <input id="C" name="session1" type="radio"/>
+                <label for="C"> C-Confirm sponsors.</label>
+            </p>
+            <p>Session 2 Workshop:
+                <br/>
+                <input id="D" name="session2" type="radio" value="Visa"
+                /><label for="D"> D-Picking a venue and date.</label>
+                <input id="E" name="session2" type="radio" value="MasterCard"
+                /><label for="E"> E-Create a marketing plan.</label>
+                <input id="F" name="session2" type="radio" value="American Express"
+                /><label for="F">F-Confirm speakers.</label>
+            </p>
+
+
+            <p>Session 3 Workshop:
+                <br/>
+                <input id="G" name="session3" type="radio" value="Visa"
+                /><label for="G"> G-Evaluating business partners.</label>
+                <input id="H" name="session3" type="radio" value="MasterCard"
+                /><label for="H"> H-How to manage investments.</label>
+                <input id="I" name="session3" type="radio" value="American Express"
+                /><label for="I"> I-Connections Conference Party.</label>
+            </p>
+        </fieldset>
+        <br><br>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+</main>
+<footer>
+    <address><small>
+        Contact Information:
+        Address: 8801 Fairway Oaks Way, LoneTree Co ;
+        Phone: 7205858291 ;
+        Email: gpatton@regis.edu ;
+
+    </small></address>
+    <small>
+        While this website was created to satisfy the requirement of
+        building a website for an academic course at Regis University, the
+        views and opinions expressed on this website are solely those of
+        the original author and do not necessarily represent the views and
+        opinions of Regis University
+    </small>
+</footer>
+</body>
+<script src="js/cookie.js"></script>
+</html>
+
+
