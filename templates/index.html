@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %} Registration {% endblock %}
+{% block href %} href="../static/css/webdefault.css"{% endblock %}
+{% block heading %} Registration {% endblock %}
+{% block main %}
+<main>
+    <br>
+    <img alt="Geo at a party" height="200" src="../static/images/christmas.jpg" width="200">
+    <p>
+        The idea behind the Event Connections Conference is a bringing all parts
+        of the event industry together. We’re inviting musicians, brands, clothing
+        lines, venues, night clubs, DJs, catering services and many more qualified
+        professionals to attend our conference. The conference is meant to be a
+        learning experience for everyone through our workshops or just through
+        dialogue with other professionals in your industry. All capped off with
+        our own Connections Conference Party where attendees can have fun while
+        meeting like minded professionals and maybe doing a bit of networking.
+    </p>
+
+</main>
+{% endblock %}
+<footer>
+    <address><small>
+        Contact Information:
+        Address: 8801 Fairway Oaks Way, LoneTree Co ;
+        Phone: 7205858291 ;
+        Email: gpatton@regis.edu ;
+
+    </small></address>
+    <small>
+        While this website was created to satisfy the requirement of
+        building a website for an academic course at Regis University, the
+        views and opinions expressed on this website are solely those of
+        the original author and do not necessarily represent the views and
+        opinions of Regis University
+    </small>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/39d55n105d78/colorado/?unit=us" data-label_1="COLORADO" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons" data-theme="blue-mountains" >COLORADO WEATHER</a>
+</footer>
+
+
+</body>
+<script>
+    !function(d,s,id){
+        let js;
+        const fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</html>

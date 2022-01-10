@@ -1,0 +1,104 @@
+body {
+    background-color: lightgrey;
+}
+
+div.payments {
+    text-align: center;
+}
+
+table3 {
+    border-collapse: collapse;
+    border-style: solid;
+    padding-top: 50px;
+
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    background-color: cornsilk;
+    border-bottom: 2px solid #111111;
+    border-top: 1px solid #999;
+    text-align: left;
+}
+
+td {
+    background-color: aliceblue;
+    padding: 15px;
+    border: 2px solid #000000;
+}
+
+footer {
+    clear: both;
+    position: relative;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+fieldset {
+
+    background-color: aliceblue;
+}
+
+fieldset:hover {
+    font-weight: bold;
+    background-color: azure;
+    box-shadow: 0 0 15px gray;
+}
+
+.navbar {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: solid
+}
+
+tr {
+    text-align: center;
+
+}
+
+.numvotes {
+    text-align: center;
+}
+
+.numvotes1 {
+    text-align: center;
+}
+
+.numvotes2 {
+    text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 287px 287px;
+    grid-template-rows: 189px 189px 189px 189px 189px;
+  background-color: #2196F3;
+  padding: 30px;
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
